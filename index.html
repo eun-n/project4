@@ -26,8 +26,7 @@
       <img id="ui4" src="assets/menu.png">
 
       <video id="coaster" autoplay loop="true" src="assets/teaser.mp4">
-<!--       <video id="taeyeon" loop="false" src="assets/taeyeon1.mp4">
- -->    </a-assets>
+    </a-assets>
 
     <!-- camera positioning -->
       <a-entity position="0 2.2 4">
@@ -59,10 +58,7 @@
       </a-image>
 
       <!-- Image icon for a menu button -->
-      <a-image id="menuhide" onclick="hide()" src="#ui4" rotation="0 0 0" height=".5" width=".5" position="0 -.5 0" visible="false">                
-      </a-image>
-      <a-image id="menushow" onclick="show()" src="#ui4" rotation="0 0 0" height=".5" width=".5" position="0 -.5 0" visible="true">                
-      </a-image>
+      <a-image id="menuhide" onclick="toggle()" src="#ui4" rotation="0 0 0" height=".5" width=".5" position="0 -.5 0"></a-image>
 
       <a-sky color="black"></a-sky>
 
