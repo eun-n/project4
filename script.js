@@ -12,7 +12,13 @@ function rain () {
 	document.querySelector("#currentvid").load();
 }
 
+// function show() {
+// 	document.querySelector("#ui2").src = 'assets/taei.png';
+// 	document.querySelector("#ui3").src = 'assets/taeyeonrain.jpg';
+// 	document.querySelector('#ui2').load();
+// 	document.querySelector('#ui3').load();
 
+// }
 // document.querySelector('#currentvid').addEventListener('click', function () {
 //   document.getElementById("currentvid").src='#taeyeon';
 // 	document.getElementById("currentvid").load();
