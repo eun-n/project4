@@ -17,7 +17,7 @@ function show() {
 	// document.querySelector("#ui3").src = 'assets/taeyeonrain.jpg';
 	// document.querySelector('#ui2').load();
 	// document.querySelector('#ui3').load();
-	document.querySelector("#test").hide();
+	// document.querySelector("#test").hide();
 	// document.querySelector('#test').load();
 }
 
