@@ -5,3 +5,7 @@ a-curvedimage {
 body {
 	color: white;
 }
+
+#test {
+	visibility: hidden;
+}
