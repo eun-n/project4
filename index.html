@@ -27,9 +27,9 @@
 
     <!-- fuse-click - allows user to "click" an object after staring at it for a certain amount of time -->
       <a-entity position="0 0 -3"
-                geometry="primitive: ring; radiusOuter: 0.30;
-                          radiusInner: 0.20;"
-                material="color: cyan; shader: flat"
+                geometry="primitive: ring; radiusOuter: 0.10;
+                          radiusInner: 0.05;"
+                material="color: crimson; shader: flat"
                 cursor="maxDistance: 30; fuse: true">
         <a-animation begin="click" easing="ease-in" attribute="scale"
              fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
@@ -43,11 +43,15 @@
     <a-video id="currentvid" src="#coaster" width="48" height="27" position="0 0 -25" webkit-playsinline>
     </a-video>     
           
-    <!-- image when clicked on will change the source video -->
+    <!-- image when 'clicked' on will change the source video -->
       <a-image id="test" onclick="eye()" src="#ui2" rotation="0 -90 0" height="3" width="3" position="5 2 0">                
       </a-image>
       <a-image id="test" onclick="rain()" src="#ui3" rotation="0 -90 0" height="3" width="3" position="5 2 4">                
       </a-image>
+
+      <a-sky color="black"></a-sky>
+      <!-- <a-sky src="assets/milkypano.jpg"></a-sky> -->
+        <!-- <a-plane color="#CCC" height="20" width="20"></a-plane> -->
     </a-scene>
 
   </body>
