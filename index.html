@@ -29,12 +29,14 @@
       <img id="ui6" src="assets/pause.png">
       <img id="ui7" src="assets/volume.png">
       <img id="ui8" src="assets/mute.png">
+      <img id="ui9" src="assets/rewind.png">
+      <img id="ui10" src="assets/forward.png">
+      <img id="ui11" src="assets/baby.jpg">
+      <img id="ui12" src="assets/sober.jpg">
 
       <!-- video tag, able to manipulate video src, but not a-video src -->
       <video id="coaster" autoplay loop="true"  controls>
         <source src="assets/teaser.mp4" type="video/mp4">
-        <source src="assets/teaser.webm" type="video/webm">
-        <track src="/subtitles.vtt" kind="subtitles" srclang="en" label="English" default>
       </video>
     </a-assets>
 
@@ -59,6 +61,8 @@
     <!-- image when 'clicked' on will change the source video -->
     <a-image id="test" onclick="eye()" src="#ui2" rotation="0 0 0" height="1" width="1" position="4 2.4 0" visible="false"></a-image>
     <a-image id="test1" onclick="rain()" src="#ui3" rotation="0 0 0" height="1" width="1" position="4 1.2 0" visible="false"></a-image>
+    <a-image id="baby" onclick="fantastic()" src="#ui11" rotation="0 0 0" height="1" width="1" position="4 0 0" visible="false"></a-image>
+    <a-image id="sober" onclick="sober()" src="#ui12" rotation="0 0 0" height="1" width="1" position="4 -1.2 0" visible="false"></a-image>
 
    <!-- Image icon for a menu button -->
    <a-image id="menu" onclick="toggle()" src="#ui4" rotation="0 0 0" height=".5" width=".5" position="4 3.2 0"></a-image>
@@ -69,9 +73,13 @@
     </a-image>
 
     <!-- image icons for mute and unmute -->
-    <a-image id="sound" onclick="sound()" src="#ui7" rotation="0 0 0" height=".5" width=".5" position="1 -.5 0" visible="true"></a-image>
-   <a-image id="mute" onclick="mute()" src="#ui8" rotation="0 0 0" height=".5" width=".5" position="1 -.5 0" visible="false">
+    <a-image id="sound" onclick="sound()" src="#ui7" rotation="0 0 0" height=".5" width=".5" position="1.4 -.5 0" visible="true"></a-image>
+   <a-image id="mute" onclick="mute()" src="#ui8" rotation="0 0 0" height=".5" width=".5" position="1.4 -.5 0" visible="false">
     </a-image>
+
+    <!-- image icon for rewind and forward  -->
+    <a-image id="rewind" onclick="rewind()" src="#ui9" rotation="0 0 0" height=".5" width=".5" position="-.7 -.5 0" visible="true"></a-image>
+    <a-image id="forward" onclick="forward()" src="#ui10" rotation="0 0 0" height=".5" width=".5" position=".7 -.5 0" visible="true"></a-image>
 
    <a-sky color="black"></a-sky>
 
