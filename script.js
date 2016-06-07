@@ -2,12 +2,14 @@
 function eye () {
 	document.querySelector("#coaster").src = 'assets/taeyeon1.mp4';	
 	document.querySelector("#currentvid").load();
+	play1();
 	toggle();
 }
 
 function rain () {
 	document.querySelector("#coaster").src = 'assets/taeyeon.mp4';
 	document.querySelector("#currentvid").load();
+	play1();
 	toggle();
 }
 
@@ -18,12 +20,12 @@ function toggle() {
 
 function play1() {
 	document.getElementById('coaster').play();
-	document.getElementById('play').setAttribute('visible', !document.getElementById('play').getAttribute('visible'));
-	document.getElementById('pause').setAttribute('visible', !document.getElementById('pause').getAttribute('visible'));
+	document.getElementById('play').setAttribute('visible', false);
+	document.getElementById('pause').setAttribute('visible', true);
 }
 
 function pause1() {
 	document.getElementById('coaster').pause();
-	document.getElementById('play').setAttribute('visible', !document.getElementById('play').getAttribute('visible'));
-	document.getElementById('pause').setAttribute('visible', !document.getElementById('pause').getAttribute('visible'));
+	document.getElementById('play').setAttribute('visible', true);
+	document.getElementById('pause').setAttribute('visible', false);
 }
