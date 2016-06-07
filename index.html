@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Video Theater w/ A-Frame!</title>
+    <title>Video Theater w/A-Frame</title>
 
     <!-- a-frame stuff -->
     <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
@@ -27,23 +27,29 @@
       <img id="ui4" src="assets/menu.png">
       <img id="ui5" src="assets/play.png">
       <img id="ui6" src="assets/pause.png">
+      <img id="ui7" src="assets/volume.png">
+      <img id="ui8" src="assets/mute.png">
 
       <!-- video tag, able to manipulate video src, but not a-video src -->
-      <video id="coaster" autoplay loop="true" src="assets/teaser.mp4">
+      <video id="coaster" autoplay loop="true"  controls>
+        <source src="assets/teaser.mp4" type="video/mp4">
+        <source src="assets/teaser.webm" type="video/webm">
+        <track src="/subtitles.vtt" kind="subtitles" srclang="en" label="English" default>
+      </video>
     </a-assets>
 
     <!-- camera positioning -->
   <a-entity position="0 2.2 4">
     <a-entity camera look-controls wasd-controls>
 
-    <!-- fuse-click - allows user to "click" an object after staring at it for a certain amount of time -->
-    <a-entity position="0 0 -3" geometry="primitive: ring; radiusOuter: 0.10; radiusInner: 0.05;" material="color: crimson; shader: flat"
+     <!-- fuse-click - allows user to "click" an object after staring at it for a certain amount of time -->
+     <a-entity position="0 0 -3" geometry="primitive: ring; radiusOuter: 0.10; radiusInner: 0.05;" material="color: crimson; shader: flat"
             cursor="maxDistance: 30; fuse: true">
       <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1" to=".5 .5 .5" dur="150">
        </a-animation>
       <a-animation begin="fusing" easing="ease-in" attribute="scale" fill="forwards" from=".5 .5 .5" to="0.1 0.1 0.1" dur="1000">
        </a-animation>
-      </a-entity>
+     </a-entity>
     </a-entity>
   </a-entity>
 
@@ -60,6 +66,11 @@
    <!-- image icons for pause and play buttons -->
    <a-image id="play" onclick="play1()" src="#ui5" rotation="0 0 0" height=".5" width=".5" position="0 -.5 0" visible="false"></a-image>
    <a-image id="pause" onclick="pause1()" src="#ui6" rotation="0 0 0" height=".5" width=".5" position="0 -.5 0" visible="true">
+    </a-image>
+
+    <!-- image icons for mute and unmute -->
+    <a-image id="sound" onclick="sound()" src="#ui7" rotation="0 0 0" height=".5" width=".5" position="1 -.5 0" visible="true"></a-image>
+   <a-image id="mute" onclick="mute()" src="#ui8" rotation="0 0 0" height=".5" width=".5" position="1 -.5 0" visible="false">
     </a-image>
 
    <a-sky color="black"></a-sky>

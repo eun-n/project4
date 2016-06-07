@@ -29,3 +29,15 @@ function pause1() {
 	document.getElementById('play').setAttribute('visible', true);
 	document.getElementById('pause').setAttribute('visible', false);
 }
+
+function sound() {
+	document.getElementById('coaster').muted = true;
+	document.getElementById('mute').setAttribute('visible', true);
+	document.getElementById('sound').setAttribute('visible', false);
+}
+
+function mute() {
+	document.getElementById('coaster').muted = false;
+	document.getElementById('mute').setAttribute('visible', false);
+	document.getElementById('sound').setAttribute('visible', true);
+}
