@@ -19,7 +19,9 @@
     "aframe-boilerplate"
   ],
   "main": "script.js",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.13.4"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eun-n/project4.git"
