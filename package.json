@@ -3,9 +3,9 @@
   "description": "Boilerplate for creating WebVR scenes using A-Frame",
   "version": "0.0.0",
   "license": "MIT",
-  "devDependencies": {
-    "budo": "^7.0.0",
-    "ghpages": "0.0.3"
+  "main": "index.js",
+ "scripts": {
+    "start": "node index.js"
   },
   "keywords": [
     "aframe",
