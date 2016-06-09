@@ -1,4 +1,4 @@
-var arr = ['assets/exo.mp4', 'assets/taeyeon.mp4', 'assets/FantasticBaby.mp4', 'assets/ptdemo1.mp4', 'assets/ptdemo2.mp4', 'assets/ptdemo3.mp4'];
+var arr = ['https://s3-us-west-2.amazonaws.com/myproject4/exo.mp4', 'https://s3-us-west-2.amazonaws.com/myproject4/taeyeon.mp4', 'https://s3-us-west-2.amazonaws.com/myproject4/FantasticBaby.mp4', 'https://s3-us-west-2.amazonaws.com/myproject4/ptdemo1.mp4', 'https://s3-us-west-2.amazonaws.com/myproject4/ptdemo2.mp4', 'https://s3-us-west-2.amazonaws.com/myproject4/ptdemo3.mp4'];
 var aa = 3;
 
 function vid (a) {

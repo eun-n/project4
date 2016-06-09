@@ -23,19 +23,19 @@
     <a-assets>
 
     <!-- list of images -->
-      <img id="ui2" src="assets/exo.png">
-      <img id="ui3" src="assets/taeyeonrain.jpg">
-      <img id="ui4" src="assets/menu.png">
-      <img id="ui5" src="assets/play.png">
-      <img id="ui6" src="assets/pause.png">
-      <img id="ui7" src="assets/volume.png">
-      <img id="ui8" src="assets/mute.png">
-      <img id="ui9" src="assets/rewind.png">
-      <img id="ui10" src="assets/forward.png">
+      <!-- <img id="ui2" src="assets/exo.png"> -->
+      <!-- <img id="ui3" src="assets/taeyeonrain.jpg"> -->
+      <!-- <img id="ui4" src="assets/menu.png"> -->
+      <!-- <img id="ui5" src="assets/play.png"> -->
+      <!-- <img id="ui6" src="assets/pause.png"> -->
+      <!-- <img id="ui7" src="assets/volume.png"> -->
+      <!-- <img id="ui8" src="assets/mute.png"> -->
+      <!-- <img id="ui9" src="assets/rewind.png"> -->
+      <!-- <img id="ui10" src="assets/forward.png"> -->
       <!-- <img id="ui11" src="https://s3-us-west-2.amazonaws.com/myproject4/baby.jpg"> -->
-      <img id="ui12" src="assets/pt.jpg">
-      <img id="ui13" src="assets/loop.png">
-      <img id="ui14" src="assets/noloop.png">
+      <!-- <img id="ui12" src="assets/pt.jpg"> -->
+      <!-- <img id="ui13" src="assets/loop.png"> -->
+      <!-- <img id="ui14" src="assets/noloop.png"> -->
 
       <!-- video tag, able to manipulate video src, but not a-video src -->
       <video id="coaster" autoplay loop="false"  controls onended="forward()">
@@ -62,31 +62,31 @@
   <a-video id="currentvid" src="#coaster" width="48" height="27" position="0 -0.5 -25" webkit-playsinline></a-video>     
           
     <!-- image when 'clicked' on will change the source video -->
-    <a-image id="test" onclick="vid(0)" src="#ui2" rotation="0 0 0" height="1" width="1" position="4 2.4 0" visible="false"></a-image>
-    <a-image id="test1" onclick="vid(1)" src="#ui3" rotation="0 0 0" height="1" width="1" position="4 1.2 0" visible="false"></a-image>
+    <a-image id="test" onclick="vid(0)" src="https://s3-us-west-2.amazonaws.com/myproject4/exo.png" rotation="0 0 0" height="1" width="1" position="4 2.4 0" visible="false"></a-image>
+    <a-image id="test1" onclick="vid(1)" src="https://s3-us-west-2.amazonaws.com/myproject4/taeyeonrain.jpg" rotation="0 0 0" height="1" width="1" position="4 1.2 0" visible="false"></a-image>
     <a-image id="baby" onclick="vid(2)" src="https://s3-us-west-2.amazonaws.com/myproject4/baby.jpg" rotation="0 0 0" height="1" width="1" position="4 0 0" visible="false"></a-image>
-    <a-image id="pt" onclick="vid(3)" src="#ui12" rotation="0 0 0" height="1" width="1" position="4 -1.2 0" visible="false"></a-image>
+    <a-image id="pt" onclick="vid(3)" src="https://s3-us-west-2.amazonaws.com/myproject4/pt.jpg" rotation="0 0 0" height="1" width="1" position="4 -1.2 0" visible="false"></a-image>
 
    <!-- Image icon for a menu button -->
-   <a-image id="menu" onclick="toggle()" src="#ui4" rotation="0 0 0" height=".5" width=".5" position="4 3.2 0"></a-image>
+   <a-image id="menu" onclick="toggle()" src="https://s3-us-west-2.amazonaws.com/myproject4/menu.png" rotation="0 0 0" height=".5" width=".5" position="4 3.2 0"></a-image>
 
    <!-- image icons for pause and play buttons -->
-   <a-image id="play" onclick="play1()" src="#ui5" rotation="0 0 0" height=".5" width=".5" position="0 -1 0" visible="false"></a-image>
-   <a-image id="pause" onclick="pause1()" src="#ui6" rotation="0 0 0" height=".5" width=".5" position="0 -1 0" visible="true">
+   <a-image id="play" onclick="play1()" src="https://s3-us-west-2.amazonaws.com/myproject4/play.png" rotation="0 0 0" height=".5" width=".5" position="0 -1 0" visible="false"></a-image>
+   <a-image id="pause" onclick="pause1()" src="https://s3-us-west-2.amazonaws.com/myproject4/pause.png" rotation="0 0 0" height=".5" width=".5" position="0 -1 0" visible="true">
     </a-image>
 
     <!-- image icons for mute and unmute -->
-    <a-image id="sound" onclick="sound()" src="#ui7" rotation="0 0 0" height=".5" width=".5" position="1.4 -1 0" visible="true"></a-image>
-   <a-image id="mute" onclick="mute()" src="#ui8" rotation="0 0 0" height=".5" width=".5" position="1.4 -1 0" visible="false">
+    <a-image id="sound" onclick="sound()" src="https://s3-us-west-2.amazonaws.com/myproject4/volume.png" rotation="0 0 0" height=".5" width=".5" position="1.4 -1 0" visible="true"></a-image>
+   <a-image id="mute" onclick="mute()" src="https://s3-us-west-2.amazonaws.com/myproject4/mute.png" rotation="0 0 0" height=".5" width=".5" position="1.4 -1 0" visible="false">
     </a-image>
 
     <!-- image icon for rewind and forward  -->
-    <a-image id="rewind" onclick="rewind()" src="#ui9" rotation="0 0 0" height=".5" width=".5" position="-.7 -1 0" visible="true"></a-image>
-    <a-image id="forward" onclick="forward()" src="#ui10" rotation="0 0 0" height=".5" width=".5" position=".7 -1 0" visible="true"></a-image>
+    <a-image id="rewind" onclick="rewind()" src="https://s3-us-west-2.amazonaws.com/myproject4/rewind.png" rotation="0 0 0" height=".5" width=".5" position="-.7 -1 0" visible="true"></a-image>
+    <a-image id="forward" onclick="forward()" src="https://s3-us-west-2.amazonaws.com/myproject4/forward.png" rotation="0 0 0" height=".5" width=".5" position=".7 -1 0" visible="true"></a-image>
 
     <!-- image icon for loop -->
-    <a-image id="loop" onclick="loop()" src="#ui13" rotation="0 0 0" height=".5" width=".5" position="-1.4 -1 0" visible="true"></a-image>
-    <a-image id="noloop" onclick="noloop()" src="#ui14" rotation="0 0 0" height=".5" width=".5" position="-1.4 -1 0" visible="false"></a-image>
+    <a-image id="loop" onclick="loop()" src="https://s3-us-west-2.amazonaws.com/myproject4/loop.png" rotation="0 0 0" height=".5" width=".5" position="-1.4 -1 0" visible="true"></a-image>
+    <a-image id="noloop" onclick="noloop()" src="https://s3-us-west-2.amazonaws.com/myproject4/noloop.png" rotation="0 0 0" height=".5" width=".5" position="-1.4 -1 0" visible="false"></a-image>
 
    <a-sky color="black"></a-sky>
 
