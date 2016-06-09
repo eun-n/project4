@@ -1,4 +1,4 @@
-var arr = ['assets/taeyeon1.mp4', 'assets/taeyeon.mp4', 'assets/FantasticBaby.mp4', 'assets/ptdemo1.mp4', 'assets/ptdemo2.mp4', 'assets/ptdemo3.mp4'];
+var arr = ['assets/exo.mp4', 'assets/taeyeon.mp4', 'assets/FantasticBaby.mp4', 'assets/ptdemo1.mp4', 'assets/ptdemo2.mp4', 'assets/ptdemo3.mp4'];
 var aa = 3;
 
 function vid (a) {
@@ -62,10 +62,24 @@ function forward() {
 		document.getElementById('coaster').src= arr[0]; 
 		aa = 0;
 		}
+
 		play1();
 }
 
 function start () {
 	vid(3);
 	pause1();
+}
+
+function loop() {
+	document.getElementById('coaster').setAttribute('loop', true);
+	document.getElementById('loop').setAttribute('visible', false);
+	document.getElementById('noloop').setAttribute('visible', true);
+}
+
+function noloop() {
+	document.getElementById('coaster').setAttribute('loop', false);
+	document.getElementById('loop').setAttribute('visible', true);
+	document.getElementById('noloop').setAttribute('visible', false);
+
 }
